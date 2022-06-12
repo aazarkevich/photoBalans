@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Прибор учёта</title>
+    <link rel="stylesheet" href="/resources/css/bootstrap5.min.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/resources/css/buttons.dataTables.min.css">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container  d-flex align-items-center flex-column">
+    <div class="row text-center w-100 ">
+        <table class="table table-striped table-bordered" id="info-table">
+            <thead>
+            <tr>
+                <th>ТП и линия</th>
+                <th>Адрес</th>
+                <th>ФИО</th>
+                <th>№ Договора</th>
+                <th>ПУ</th>
+                <th>Номер устройства</th>
+                <th>Принадлежность</th>
+                <th>Показания</th>
+                <th>Дата последних показаний</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr th:each="values: ${valuesList}">
+                    <td th:text="${values.tpAndLine}"></td>
+                    <td th:text="${values.address}"></td>
+                    <td th:text="${values.name}"></td>
+                    <td th:text="${values.numberAccount}"></td>
+                    <td th:text="${values.nameDevice}"></td>
+                    <td th:text="${values.numberDevice}"></td>
+                    <td th:text="${values.house}"></td>
+                    <td th:text="${values.values}"></td>
+                    <td th:text="${values.date}"></td>
+<!--                    <td th:text="${values.date}"></td>-->
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<script src="/resources/js/jquery.dataTables.min.js"></script>
+<script src="/resources/js/dataTables.bootstrap5.min.js"></script>
+<script src="/resources/js/dataTables.buttons.min.js"></script>
+<script src="/resources/js/jszip.min.js"></script>
+<script src="/resources/js/buttons.html5.min.js"></script>
+<script src="/resources/js/popper.min.js"></script>
+<script src="/resources/js/bootstrap.min.js"></script>
+<script src="/resources/js/tableValues.js"></script>
+</html>

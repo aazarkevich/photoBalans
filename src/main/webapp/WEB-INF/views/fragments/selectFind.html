@@ -1,0 +1,21 @@
+<div th:fragment="selectFind" class="row text-center w-100 ">
+    <form th:method="GET" th:action="@{/find}" class="h-100" onsubmit="return validateFind()">
+        <div class=" d-flex  justify-content-center align-items-center flex-column h-100 w-100">
+            <div class="d-flex justify-content-center flex-column align-items-center xs-10 mt-auto h-75">
+                <label for="selectFind" class="form-label">Выбрать условие поиска</label>
+                <select class="form-select" aria-label="Default select example" name="selectFind" id="selectFind">
+                    <option value="serial">Серийный номер счетчика</option>
+                    <option value="fio">ФИО потребителя</option>
+                    <option value="address">Адресс</option>
+                    <option value="personal">Лицевой счёт</option>
+                    <option value="house">Принадлежность</option>
+                    <option value="tpAndLine">ТП</option>
+                </select>
+                <input type="input" class="mt-2 form-control form-control-lg " placeholder="Введите строку поиска..."
+                       name="find"
+                       id="find" required>
+                <button type="submit" class="mt-2 btn btn-primary btn-lg">Поиск</button>
+            </div>
+        </div>
+    </form>
+</div>

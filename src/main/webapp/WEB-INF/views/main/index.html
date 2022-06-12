@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Поиск прибора учёта</title>
+    <link rel="stylesheet" href="/resources/css/bootstrap5.min.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container  d-flex align-items-center flex-column">
+<div th:replace="fragments/selectFind :: selectFind"></div>
+</div>
+</body>
+<script>
+    function validateFind() {
+        str = document.getElementById('find').value;
+        if(str.trim() === ""){
+            alert("Введите условие поиска...");
+            return false;
+        }
+        return true;
+    }
+</script>
+</html>

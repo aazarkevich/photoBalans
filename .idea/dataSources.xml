@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="photoBee" uuid="507b7e29-e27e-4a50-babb-fa3e94fa6248">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.150.40:5432/postgres</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Sbeef" uuid="807ad7f8-aa05-4bb3-bdd0-b8a52227e09b">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.150.40:5432/S-beeF</jdbc-url>
+    </data-source>
+  </component>
+</project>

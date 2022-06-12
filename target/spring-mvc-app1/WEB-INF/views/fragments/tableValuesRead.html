@@ -1,0 +1,19 @@
+<table>
+    <thead>
+    <tr>
+        <th>ТП и линия</th>
+        <th>Адрес</th>
+        <th>ФИО</th>
+        <th>№ Договора</th>
+        <th>ПУ</th>
+        <th>Номер устройства</th>
+        <th>Принадлежность</th>
+        <th>Показания</th>
+        <th>Дата последних показаний</th>
+    </tr>
+    </thead>
+    <thbody>
+        <tr th:each="values: ${valuesList}"></tr>
+        <td th:text="${values.tpAndLine}"></td>
+    </thbody>
+</table>
