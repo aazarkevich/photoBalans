@@ -13,14 +13,5 @@
 <div th:replace="fragments/selectFind :: selectFind"></div>
 </div>
 </body>
-<script>
-    function validateFind() {
-        str = document.getElementById('find').value;
-        if(str.trim() === ""){
-            alert("Введите условие поиска...");
-            return false;
-        }
-        return true;
-    }
-</script>
+<script src="/resources/js/validate.js"></script>
 </html>

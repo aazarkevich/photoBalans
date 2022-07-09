@@ -2,6 +2,7 @@ package photoBalans.models;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.Objects;
 
 @Entity
 @Table(name = "beef", schema = "public", catalog = "photoBee")
@@ -143,5 +144,28 @@ public class BeeF {
                 ", date=" + date +
                 ", res='" + res + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        BeeF beeF = (BeeF) o;
+        return id == beeF.id &&
+                Objects.equals(tpAndLine, beeF.tpAndLine) &&
+                Objects.equals(address, beeF.address) &&
+                Objects.equals(name, beeF.name) &&
+                Objects.equals(numberAccount, beeF.numberAccount) &&
+                Objects.equals(nameDevice, beeF.nameDevice) &&
+                Objects.equals(numberDevice, beeF.numberDevice) &&
+                Objects.equals(house, beeF.house) &&
+                Objects.equals(values, beeF.values) &&
+                Objects.equals(date, beeF.date) &&
+                Objects.equals(res, beeF.res);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, tpAndLine, address, name, numberAccount, nameDevice, numberDevice, house, values, date, res);
     }
 }

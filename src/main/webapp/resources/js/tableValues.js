@@ -1,16 +1,16 @@
-$(document).ready(function () {
-    $('#info-table').DataTable({
-        select: true,
-        "aLengthMenu": [[25, 50, 75, -1], [25, 50, 75, "Все"]],
-        "iDisplayLength": 25,
-        dom: 'lBfrtip',
-        buttons: [{
-            extend: 'excelHtml5',
-            autoFilter: true,
-            sheetName: 'Exported data'
-        }],
-    });
-});
+// $(document).ready(function () {
+//     $('#info-table').DataTable({
+//         // select: true,
+//         // "aLengthMenu": [[25, 50, 75, -1], [25, 50, 75, "Все"]],
+//         // "iDisplayLength": 25,
+//         // dom: 'lBfrtip',
+//         // buttons: [{
+//         //     extend: 'excelHtml5',
+//         //     autoFilter: true,
+//         //     sheetName: 'Exported data'
+//         // }],
+//     });
+// });
 
 function getValueDate() {
     date = document.getElementById('DateValues');

@@ -5,10 +5,13 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 import photoBalans.models.DataPhoto;
 import photoBalans.service.BeeService;
 
+import javax.xml.crypto.Data;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 public class DataPhotoImpl implements DataPhotoDao {
@@ -25,7 +28,7 @@ public class DataPhotoImpl implements DataPhotoDao {
 
     @Override
     public List<DataPhoto> findNumberDevice(String findNumberDevice) {
-        List from_dataPhoto = getSession().createQuery("from DataPhoto where numberDevice like :number_device and res = :res ")
+        List<DataPhoto> from_dataPhoto = getSession().createQuery("from DataPhoto where numberDevice like :number_device and res = :res order by id desc")
                 .setParameter("number_device", "%" + findNumberDevice + "%")
                 .setParameter("res", BeeService.getRes())
                 .list();
@@ -85,4 +88,12 @@ public class DataPhotoImpl implements DataPhotoDao {
                 .list();
         return from_dataPhoto;
     }
+
+    @Override
+    public void save(DataPhoto dataPhoto) {
+//        getSession().beginTransaction();
+        getSession().save(dataPhoto);
+//        getSession().getTransaction().commit();
+    }
+
 }

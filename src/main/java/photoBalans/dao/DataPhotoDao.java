@@ -12,4 +12,5 @@ public interface DataPhotoDao {
     List<DataPhoto> findNumberAccount(String numberAccount);
     List<DataPhoto> findNameDevice(String nameDevice);
     List<DataPhoto> findHouse(String house);
+    void save(DataPhoto dataPhoto);
 }

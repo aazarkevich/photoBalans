@@ -6,7 +6,81 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a9e16cd-80c7-41eb-b4e2-c4f72ac34875" name="Default Changelist" comment="" />
+    <list default="true" id="5a9e16cd-80c7-41eb-b4e2-c4f72ac34875" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/ValuesPhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoBalans/service/ValuesPhotoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/service/InitialTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/service/ServicesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/service/UItest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/507b7e29-e27e-4a50-babb-fa3e94fa6248/storage_v2/_src_/database/photoBee.8MALtA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/807ad7f8-aa05-4bb3-bdd0-b8a52227e09b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/807ad7f8-aa05-4bb3-bdd0-b8a52227e09b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/Config/MySpringMvcDispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/Config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/Config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/Config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/Config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/Config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/BeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/BeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/dao/BeeFImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/dao/BeeFImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/dao/DataPhotoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/dao/DataPhotoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/dao/DataPhotoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/dao/DataPhotoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/models/BeeF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/models/BeeF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/models/DataPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/models/DataPhoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/service/BeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/service/BeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/service/UserDetailsServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/service/UserDetailsServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/autorization/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/autorization/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/tableValuesRead.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/tableValuesRead.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/values.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/tableValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tableValues.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/photoBalans.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/Config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/Config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/Config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/Config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/controllers/BeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/controllers/BeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/dao/BeeFImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/dao/BeeFImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/dao/DataPhotoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/dao/DataPhotoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/dao/DataPhotoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/dao/DataPhotoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/dao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/models/BeeF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/models/BeeF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/models/DataPhoto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/models/DataPhoto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/service/BeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/service/BeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/service/UserDetailsServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/service/UserDetailsServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/photoBalans/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/META-INF/photoBalans.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/Config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/Config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/Config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/Config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/controllers/BeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/controllers/BeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/BeeFImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/BeeFImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/DataPhotoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/DataPhotoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/DataPhotoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/DataPhotoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/models/BeeF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/models/BeeF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/models/DataPhoto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/models/DataPhoto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/BeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/BeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/UserDetailsServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/UserDetailsServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/fragments/tableValuesRead.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/fragments/tableValuesRead.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/main/values.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/main/values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/resources/js/tableValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/resources/js/tableValues.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,65 +107,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="photoBee" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="photoBee" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="photoBee: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="photoBee" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="photoBee: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="photoBee" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="photoBee: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="photoBee" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="photoBee: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="photoBee" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="photoBee: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="beef: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="photoBee" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="photoBee: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="data_photo: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="photoBee" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="photoBee: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -124,8 +139,19 @@
         <option value="CSS File" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\java\photoBalans\.idea" />
+      </set>
     </option>
   </component>
   <component name="LogFilters">
@@ -145,30 +171,32 @@
     </option>
   </component>
   <component name="ProjectId" id="278gdupVirW7yJICY54U1VIObib" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="oracle&#10;postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32058823" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\photoBalans\src\main\webapp\resources\js" />
-      <recent name="D:\java\photoBalans\src\main\webapp\resources\css" />
-      <recent name="D:\java\photoBalans\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\photoBalans\src\main\webapp\WEB-INF\views\autorization" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="photoBalans.Config" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\photoBalans\src\main\webapp\WEB-INF\views\autorization" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\photoBalans\src\main\webapp\resources\js" />
+      <recent name="D:\java\photoBalans\src\main\webapp\resources\css" />
+      <recent name="D:\java\photoBalans\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -183,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.58">
+  <component name="RunManager" selected="TestNG.UItest.autorization">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="photoBalans.Main" />
       <module name="photoBalans" />
@@ -210,15 +238,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="photoBalans.models.main" />
+    <configuration name="ServicesTest.equalsDataPhotoBeeFTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="photoBalans" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="photoBalans.models.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ServicesTest" />
+      <option name="METHOD_NAME" value="equalsDataPhotoBeeFTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UItest.autorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="photoBalans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UItest" />
+      <option name="METHOD_NAME" value="autorization" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UItest.autorization" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="photoBalans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UItest" />
+      <option name="METHOD_NAME" value="autorization" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -297,16 +362,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.main" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="JUnit.ServicesTest.equalsDataPhotoBeeFTest" />
+      <item itemvalue="JUnit.UItest.autorization" />
+      <item itemvalue="TestNG.UItest.autorization" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.58" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.UItest.autorization" />
+        <item itemvalue="JUnit.UItest.autorization" />
+        <item itemvalue="JUnit.ServicesTest.equalsDataPhotoBeeFTest" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -334,11 +403,38 @@
       <workItem from="1653306865306" duration="4190000" />
       <workItem from="1653461760775" duration="4002000" />
       <workItem from="1654062028279" duration="39445000" />
-      <workItem from="1654681453530" duration="14876000" />
+      <workItem from="1654681453530" duration="15206000" />
+      <workItem from="1655186421213" duration="1317000" />
+      <workItem from="1655378241758" duration="1197000" />
+      <workItem from="1655445791357" duration="26152000" />
+      <workItem from="1655878852862" duration="2728000" />
+      <workItem from="1655893711295" duration="7169000" />
+      <workItem from="1656255310237" duration="1962000" />
+      <workItem from="1656308393732" duration="2309000" />
+      <workItem from="1656313891032" duration="4997000" />
+      <workItem from="1656478841516" duration="1449000" />
+      <workItem from="1656487076612" duration="35878000" />
+      <workItem from="1656674539755" duration="10360000" />
+      <workItem from="1656934698462" duration="23300000" />
+      <workItem from="1657092755035" duration="63413000" />
+      <workItem from="1657403721050" duration="716000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

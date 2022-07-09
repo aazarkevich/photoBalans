@@ -1,19 +1,234 @@
-<table>
-    <thead>
-    <tr>
-        <th>ТП и линия</th>
-        <th>Адрес</th>
-        <th>ФИО</th>
-        <th>№ Договора</th>
-        <th>ПУ</th>
-        <th>Номер устройства</th>
-        <th>Принадлежность</th>
-        <th>Показания</th>
-        <th>Дата последних показаний</th>
-    </tr>
-    </thead>
-    <thbody>
-        <tr th:each="values: ${valuesList}"></tr>
-        <td th:text="${values.tpAndLine}"></td>
-    </thbody>
-</table>
+<div th:fragment="tableValues" class="row w-auto table-responsive " xmlns:form="http://www.w3.org/1999/html">
+    <!--    <form th:method="POST" th:action="@{/find}">-->
+    <table class="table table-striped table-bordered" id="info-table">
+        <thead>
+        <tr>
+            <th>ТП и линия</th>
+            <th>Адрес</th>
+            <th>ФИО</th>
+            <th>№ Договора</th>
+            <th>ПУ</th>
+            <th>Номер устройства</th>
+            <th>Принадлежность</th>
+            <th>Последние показания</th>
+            <th>Дата последних показаний</th>
+            <th>Фотографии показаний</th>
+            <th>Добавить показания</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="dataPhoto: ${dataPhotoList}">
+            <td th:text="${dataPhoto.tpAndLine}"></td>
+            <td th:text="${dataPhoto.address}"></td>
+            <td th:text="${dataPhoto.name}"></td>
+            <td><span th:text="${dataPhoto.numberAccount}"></span></td>
+            <td th:text="${dataPhoto.nameDevice}"></td>
+            <td th:text="${dataPhoto.numberDevice}"></td>
+            <td th:text="${dataPhoto.house}"></td>
+            <td th:text="${dataPhoto.values}"></td>
+            <td th:text="${dataPhoto.date}"></td>
+            <td><a th:href="@{'/valuesPhoto/download/' + ${dataPhoto.pathPhoto}}" th:text="${dataPhoto.pathPhoto}"></a></td>
+            <td>
+                <a th:data-target="${'#showValues'+dataPhoto.id}" href="#" role="button" class="btn btn-light"
+                   data-toggle="modal">Сохранить
+                    показания
+                </a>
+                <div class="modal " th:id="'showValues' + ${dataPhoto.id}" tabindex="-1"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalDataPhotoLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <form th:method="POST" th:action="@{/valuesPhoto/saveValues}" th:object="${DataPhoto}" onsubmit="return validateValuesDataPhoto()"  enctype="multipart/form-data" >
+                                <div class="modal-body">
+                                    <div class="form-outline">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="tpAndLineDataPhotoHelp">Тп и линия</span>
+                                            <input type="text" class="form-control" id="tpAndLineDataPhoto"
+                                                   aria-describedby="basic-addon3" name="tpAndLine"
+                                                   th:value="${dataPhoto.tpAndLine}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="addressDataPhotoHelp">Адресс</span>
+                                            <input type="text" class="form-control" id="addressDataPhoto"
+                                                   aria-describedby="basic-addon3" name="address"
+                                                   th:value="${dataPhoto.address}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="nameDataPhotoHelp">ФИО</span>
+                                            <input type="text" class="form-control" id="nameDataPhoto"
+                                                   aria-describedby="basic-addon3" name="name"
+                                                   th:value="${dataPhoto.name}" readonly="true">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="numberAccountDataPhotoHelp">№ Договора</span>
+                                            <input type="text" class="form-control" id="numberAccountDataPhoto"
+                                                   aria-describedby="basic-addon3" name="numberAccount"
+                                                   th:value="${dataPhoto.numberAccount}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="nameDeviceDataPhotoHelp">ПУ</span>
+                                            <input type="text" class="form-control" id="nameDeviceDataPhoto"
+                                                   aria-describedby="basic-addon3" name="nameDevice"
+                                                   th:value="${dataPhoto.nameDevice}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="numberDeviceDataPhotoHelp">Номер устройства</span>
+                                            <input type="text" class="form-control" id="numberDeviceDataPhoto"
+                                                   aria-describedby="basic-addon3" name="numberDevice"
+                                                   th:value="${dataPhoto.numberDevice}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="houseDataPhotoHelp">Принадлежность</span>
+                                            <input type="text" class="form-control" id="houseDataPhoto"
+                                                   aria-describedby="basic-addon3" name="house"
+                                                   th:value="${dataPhoto.house}" readonly="true">
+                                        </div>
+
+                                        <input type="text" th:value="${dataPhoto.res}" hidden name="res">
+
+                                        <div class="input-group mb-3">
+                                    <span class="input-group-text"
+                                          id="valuesDataPhotoHelp">Введите показания</span>
+                                            <input type="text" class="form-control" id="valuesDataPhoto"
+                                                   aria-describedby="basic-addon3" name="values" required>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control" id="photoValuesDataPhoto" name="photoValues"
+                                               accept="image/*" >
+                                    </div>
+                                </div>
+                                <input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}"/>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                                    <button type="submit"
+                                            class="btn btn-success">Сохранить
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tbody>
+        <tbody>
+        <tr th:each="beeF: ${beeFList}">
+            <td th:text="${beeF.tpAndLine}"></td>
+            <td th:text="${beeF.address}"></td>
+            <td th:text="${beeF.name}"></td>
+            <td><span th:text="${beeF.numberAccount}"></span></td>
+            <td th:text="${beeF.nameDevice}"></td>
+            <td th:text="${beeF.numberDevice}"></td>
+            <td th:text="${beeF.house}"></td>
+            <td th:text="${beeF.values}"></td>
+            <td th:text="${beeF.date}"></td>
+            <td>Нет последних показаний</td>
+            <td>
+                <a th:data-target="${'#showValues'+beeF.id}" href="#" role="button" class="btn btn-light"
+                   data-toggle="modal">Сохранить
+                    показания
+                </a>
+                <div class="modal " th:id="'showValues' + ${beeF.id}" tabindex="-1"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <!--                        <form th:method="POST" th:action="@{/valuesPhoto/saveValues/{id}(id=beeF.id)}">-->
+                            <form th:method="POST" th:action="@{/valuesPhoto/saveValues}" th:object="${DataPhoto}" onsubmit="return validateValues()"  enctype="multipart/form-data" >
+                                <div class="modal-body">
+                                    <div class="form-outline">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="tpAndLineHelp">Тп и линия</span>
+                                            <input type="text" class="form-control" id="tpAndLine"
+                                                   aria-describedby="basic-addon3" name="tpAndLine"
+                                                   th:value="${beeF.tpAndLine}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="addressHelp">Адресс</span>
+                                            <input type="text" class="form-control" id="address"
+                                                   aria-describedby="basic-addon3" name="address"
+                                                   th:value="${beeF.address}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="nameHelp">ФИО</span>
+                                            <input type="text" class="form-control" id="name"
+                                                   aria-describedby="basic-addon3" name="name"
+                                                   th:value="${beeF.name}" readonly="true">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="numberAccountHelp">№ Договора</span>
+                                            <input type="text" class="form-control" id="numberAccount"
+                                                   aria-describedby="basic-addon3" name="numberAccount"
+                                                   th:value="${beeF.numberAccount}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="nameDeviceHelp">ПУ</span>
+                                            <input type="text" class="form-control" id="nameDevice"
+                                                   aria-describedby="basic-addon3" name="nameDevice"
+                                                   th:value="${beeF.nameDevice}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="numberDeviceHelp">Номер устройства</span>
+                                            <input type="text" class="form-control" id="numberDevice"
+                                                   aria-describedby="basic-addon3" name="numberDevice"
+                                                   th:value="${beeF.numberDevice}" readonly="true">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="houseHelp">Принадлежность</span>
+                                            <input type="text" class="form-control" id="house"
+                                                   aria-describedby="basic-addon3" name="house"
+                                                   th:value="${beeF.house}" readonly="true">
+                                        </div>
+
+                                        <input type="text" th:value="${beeF.res}" hidden name="res">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text"
+                                                  id="valuesHelp">Введите показания</span>
+                                            <input type="text" class="form-control" id="values"
+                                                   aria-describedby="basic-addon3" name="values" required>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control" id="photoValues" name="photoValues"
+                                               accept="image/*" >
+                                    </div>
+                                </div>
+                                <input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}"/>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                                    <button type="submit"
+                                            class="btn btn-success">Сохранить
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+</div>

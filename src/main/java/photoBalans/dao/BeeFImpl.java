@@ -5,6 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 import photoBalans.models.BeeF;
 import photoBalans.service.BeeService;
 
@@ -24,6 +25,7 @@ public class BeeFImpl implements BeeFDao {
     }
 
     @Override
+//    @Transactional
     public List<BeeF> findNumberDevice(String findNumberDevice) {
         List from_beeF = getSession().createQuery("from BeeF where numberDevice like :number_device and res = :res ")
                 .setParameter("number_device", "%" + findNumberDevice + "%")

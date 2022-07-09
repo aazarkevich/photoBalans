@@ -13,12 +13,16 @@ import org.springframework.security.core.userdetails.User.UserBuilder;
 
 @Service("userDetailsService")
 public class UserDetailsServiceImp implements UserDetailsService {
-    @Autowired
     private UserDao userDao;
-    @Autowired
     private BCryptPasswordEncoder passwordEncoder;
-    @Autowired
     private BeeService beeService;
+
+    @Autowired
+    public UserDetailsServiceImp(UserDao userDao, BCryptPasswordEncoder passwordEncoder, BeeService beeService) {
+        this.userDao = userDao;
+        this.passwordEncoder = passwordEncoder;
+        this.beeService = beeService;
+    }
 
     @Transactional(readOnly = true)
     @Override
@@ -47,4 +51,6 @@ public class UserDetailsServiceImp implements UserDetailsService {
             default: return null;
         }
     }
+
+
 }

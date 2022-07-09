@@ -6,20 +6,18 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import photoBalans.dao.BeeFImpl;
-import photoBalans.models.BeeF;
+import org.springframework.web.bind.annotation.ResponseBody;
 import photoBalans.service.BeeService;
-
-import java.util.List;
 
 @Controller
 @RequestMapping("/")
 public class BeeController {
+    private BeeService beeService;
 
     @Autowired
-    private BeeService beeService;
-    @Autowired
-    private BeeFImpl beeF;
+    public BeeController(BeeService beeService) {
+        this.beeService = beeService;
+    }
 
     @GetMapping()
     public String readValues() {
@@ -29,12 +27,8 @@ public class BeeController {
     @GetMapping("/find")
     public String findValues(@RequestParam("selectFind") String selectFind,
                              @RequestParam("find") String find, Model model) {
-//        List<BeeF> numberDevice = beeService.findDevice(selectFind, find.trim());
-        model.addAttribute("valuesList",beeService.findDevice(selectFind, find.trim()));
-//        for (BeeF beeF : numberDevice) {
-//            System.out.println(beeF);
-//        }
-
+        model.addAttribute("beeFList", beeService.findDeviceBeef(selectFind, find.trim()));
+        model.addAttribute("dataPhotoList", beeService.findDeviceDataPhoto(selectFind, find.trim()));
         return "main/values";
     }
 }

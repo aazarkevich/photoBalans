@@ -2,6 +2,7 @@ package photoBalans.models;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.Objects;
 
 @Entity
 @Table(name = "data_photo", schema = "public", catalog = "photoBee")
@@ -40,8 +41,8 @@ public class DataPhoto {
     @Column(name = "res")
     private String res;
     @Basic
-    @Column(name = "id_photo")
-    private long idPhoto;
+    @Column(name = "path_photo")
+    private String pathPhoto;
 
     public long getId() {
         return id;
@@ -131,12 +132,12 @@ public class DataPhoto {
         this.res = res;
     }
 
-    public long getIdPhoto() {
-        return idPhoto;
+    public String getPathPhoto() {
+        return pathPhoto;
     }
 
-    public void setIdPhoto(long idPhoto) {
-        this.idPhoto = idPhoto;
+    public void setPathPhoto(String pathPhoto) {
+        this.pathPhoto = pathPhoto;
     }
 
     @Override
@@ -153,7 +154,27 @@ public class DataPhoto {
                 ", values='" + values + '\'' +
                 ", date=" + date +
                 ", res='" + res + '\'' +
-                ", idPhoto=" + idPhoto +
+                ", pathPhoto=" + pathPhoto +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DataPhoto dataPhoto = (DataPhoto) o;
+        return Objects.equals(tpAndLine, dataPhoto.tpAndLine) &&
+                Objects.equals(address, dataPhoto.address) &&
+                Objects.equals(name, dataPhoto.name) &&
+                Objects.equals(numberAccount, dataPhoto.numberAccount) &&
+                Objects.equals(nameDevice, dataPhoto.nameDevice) &&
+                Objects.equals(numberDevice, dataPhoto.numberDevice) &&
+                Objects.equals(house, dataPhoto.house) &&
+                Objects.equals(res, dataPhoto.res);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(tpAndLine, address, name, numberAccount, nameDevice, numberDevice, house, res);
     }
 }
