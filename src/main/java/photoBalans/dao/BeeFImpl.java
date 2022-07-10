@@ -25,7 +25,6 @@ public class BeeFImpl implements BeeFDao {
     }
 
     @Override
-//    @Transactional
     public List<BeeF> findNumberDevice(String findNumberDevice) {
         List from_beeF = getSession().createQuery("from BeeF where numberDevice like :number_device and res = :res ")
                 .setParameter("number_device", "%" + findNumberDevice + "%")

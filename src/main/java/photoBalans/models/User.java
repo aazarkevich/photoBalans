@@ -87,7 +87,4 @@ public class User implements UserDetails{
         return res;
     }
 
-//    public void setRes(String res) {
-//        this.res = res;
-//    }
 }

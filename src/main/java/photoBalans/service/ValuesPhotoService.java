@@ -12,12 +12,10 @@ import org.springframework.web.multipart.MultipartFile;
 import photoBalans.dao.DataPhotoDao;
 import photoBalans.models.DataPhoto;
 
-import javax.swing.*;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Date;
 
 @Service
@@ -64,7 +62,6 @@ public class ValuesPhotoService {
     }
 
     public InputStream downloadFile(String nameFile) {
-//        smb://192.168.143.1/public/0Rostov/photoBee/123244443_07.07.2022_ответственный
         SmbFileInputStream smbFileInputStream;
         byte[] buffer = null;
         try {
@@ -92,24 +89,4 @@ public class ValuesPhotoService {
         return new ByteArrayInputStream(buffer);
     }
 
-    private void testSave(InputStream inputStream, byte[] bytes) {
-        System.out.println();
-        try {
-            SmbFileOutputStream destFileName = new SmbFileOutputStream(
-                    new SmbFile(pathUpload + "/test.png"));
-            BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
-            byte data[] = new byte[1024];
-            int count;
-            while ((count = bufferedInputStream.read(data, 0, 1024)) != -1) {
-                destFileName.write(data, 0, count);
-            }
-            destFileName.flush();
-        } catch (SmbException ex) {
-            ex.printStackTrace();
-        } catch (MalformedURLException ex) {
-            ex.printStackTrace();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-    }
 }

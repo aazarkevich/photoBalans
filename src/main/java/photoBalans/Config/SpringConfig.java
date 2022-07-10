@@ -31,7 +31,6 @@ public class SpringConfig implements WebMvcConfigurer {
         templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("/WEB-INF/views/");
         templateResolver.setSuffix(".html");
-//        templateResolver.setTemplateMode("LEGACYHTML5");
         templateResolver.setCharacterEncoding("UTF-8");
         templateResolver.setCacheable(false);
 
@@ -61,7 +60,7 @@ public class SpringConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/img/**")
-                .addResourceLocations("\\\\192.168.143.1\\public\\0Rostov\\photo\\");
+                .addResourceLocations();
         registry
                 .addResourceHandler("/resources/**")
                 .addResourceLocations("/resources/");
@@ -76,8 +75,6 @@ public class SpringConfig implements WebMvcConfigurer {
     public CommonsMultipartResolver multipartResolver() {
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
         multipartResolver.setMaxUploadSize(10000000);
-        multipartResolver.setMaxInMemorySize(10000000);
-        multipartResolver.setMaxUploadSizePerFile(10000000);
         return multipartResolver;
     }
 

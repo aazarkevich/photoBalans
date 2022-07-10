@@ -16,13 +16,11 @@ import java.util.stream.Collectors;
 @Transactional
 public class BeeService {
     private static String res;
-    private UserDao userDao;
     private BeeFDao beeF;
     private DataPhotoDao dataPhotoDao;
 
     @Autowired
-    public BeeService(UserDao userDao, BeeFDao beeF, DataPhotoDao dataPhotoDao) {
-        this.userDao = userDao;
+    public BeeService( BeeFDao beeF, DataPhotoDao dataPhotoDao) {
         this.beeF = beeF;
         this.dataPhotoDao = dataPhotoDao;
     }
@@ -57,7 +55,7 @@ public class BeeService {
             case "tpAndLine":
                 List<DataPhoto> dataPhotoDaoTpAndLine = dataPhotoDao.findTpAndLine(find);
                 List<BeeF> beeFTpAndLine = beeF.findTpAndLine(find);
-                List<BeeF> rezultTpAndLine = equalsDataPhotoAndBeeF(dataPhotoDaoTpAndLine,beeFTpAndLine);
+                List<BeeF> rezultTpAndLine = equalsDataPhotoAndBeeF(dataPhotoDaoTpAndLine, beeFTpAndLine);
                 return rezultTpAndLine;
             default:
                 return null;
@@ -90,18 +88,22 @@ public class BeeService {
 
     }
 
-    public List<BeeF> equalsDataPhotoAndBeeF(List<DataPhoto> devicesDataPhoto, List<BeeF> devicesBeeF) {
-        List<BeeF> beeFList = null;
-        for (DataPhoto deviceDataPhoto : devicesDataPhoto) {
-            beeFList = devicesBeeF.stream().filter(device ->
-                    !device.getAddress().equals(deviceDataPhoto.getAddress()) &
-                            !device.getName().equals(deviceDataPhoto.getName()) &
-                            !device.getNameDevice().equals(deviceDataPhoto.getNameDevice()) &
-                            !device.getNumberAccount().equals(deviceDataPhoto.getNumberAccount()) &
-                            !device.getTpAndLine().equals(deviceDataPhoto.getTpAndLine())
-            ).collect(Collectors.toList());
+    private List<BeeF> equalsDataPhotoAndBeeF(List<DataPhoto> devicesDataPhoto, List<BeeF> devicesBeeF) {
+        List<BeeF> filterDeviceBeef = null;
+        if (!devicesDataPhoto.isEmpty()) {
+            for (DataPhoto deviceDataPhoto : devicesDataPhoto) {
+                filterDeviceBeef = devicesBeeF.stream().filter(device ->
+                        !device.getAddress().equals(deviceDataPhoto.getAddress()) &
+                                !device.getName().equals(deviceDataPhoto.getName()) &
+                                !device.getNameDevice().equals(deviceDataPhoto.getNameDevice()) &
+                                !device.getNumberAccount().equals(deviceDataPhoto.getNumberAccount()) &
+                                !device.getTpAndLine().equals(deviceDataPhoto.getTpAndLine())
+                ).collect(Collectors.toList());
+            }
+        } else {
+            return devicesBeeF;
         }
-        return beeFList;
+        return filterDeviceBeef;
     }
 
     public static String getRes() {

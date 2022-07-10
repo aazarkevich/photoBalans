@@ -8,21 +8,21 @@ function validateFind() {
 }
 
 function validateValues() {
-    photoValues = document.getElementById('photoValues').value;
-    if(photoValues.trim() === ""){
-        alert("Введите показания ...");
+    values = document.getElementById("values").value;
+    if(values.trim() === ""){
+        alert("Введите показания values...");
         return false;
     }
-    if(document.getElementById("photoValuesDataPhoto").files.length == 0){
-        alert("Добавьте фото ...");
+    if(document.getElementById("photoValues").files.length == 0){
+        alert("Добавьте фото values ...");
         return false;
     }
     return true;
 }
 
 function validateValuesDataPhoto() {
-    str = document.getElementById('valuesDataPhoto').value;
-    if(str.trim() === ""){
+    valuesDataPhoto = document.getElementById('valuesDataPhoto').value;
+    if(valuesDataPhoto.trim() === ""){
         alert("Введите показания ...");
         return false;
     }
