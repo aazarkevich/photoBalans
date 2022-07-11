@@ -14,8 +14,6 @@ import photoBalans.service.ValuesPhotoService;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
 
 @Controller
 @RequestMapping("/valuesPhoto")

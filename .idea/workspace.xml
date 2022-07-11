@@ -7,44 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a9e16cd-80c7-41eb-b4e2-c4f72ac34875" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/807ad7f8-aa05-4bb3-bdd0-b8a52227e09b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/807ad7f8-aa05-4bb3-bdd0-b8a52227e09b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/Config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/Config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/dao/BeeFImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/dao/BeeFImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/models/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/service/BeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/service/BeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/service/ValuesPhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/service/ValuesPhotoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/1.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/service/InitialTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/service/ServicesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/service/UItest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/tableValuesRead.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/tableValuesRead.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/Config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/Config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/dao/BeeFImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/dao/BeeFImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/models/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/service/BeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/service/BeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/service/ValuesPhotoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/service/ValuesPhotoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ё.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/Config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/Config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/BeeFImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/BeeFImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/models/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/BeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/BeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/ValuesPhotoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/ValuesPhotoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/ё.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/fragments/tableValuesRead.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/views/fragments/tableValuesRead.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/resources/js/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/resources/js/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/InitialTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ServicesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UItest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/BeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/BeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/ValuesPhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/ValuesPhotoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.58">
+  <component name="RunManager" selected="TestNG.UItest.autorizationTest (1)">
     <configuration name="ServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="photoBalans" />
       <extension name="coverage">
@@ -345,10 +312,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.UItest.autorizationTest (1)" />
         <item itemvalue="JUnit.ServiceTest.test" />
         <item itemvalue="JUnit.ServiceTest" />
         <item itemvalue="TestNG.UItest.savePhoto (1)" />
-        <item itemvalue="TestNG.UItest.autorizationTest (1)" />
         <item itemvalue="TestNG.UItest.savePhoto" />
       </list>
     </recent_temporary>
@@ -393,7 +360,7 @@
       <workItem from="1657092755035" duration="63413000" />
       <workItem from="1657403721050" duration="1457000" />
       <workItem from="1657439646618" duration="17456000" />
-      <workItem from="1657470852466" duration="3707000" />
+      <workItem from="1657470852466" duration="5393000" />
     </task>
     <servers />
   </component>
