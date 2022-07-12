@@ -49,7 +49,6 @@ public class ValuesPhotoService {
             int count;
             while ((count = bufferedInputStream.read(data, 0, 1024)) != -1) {
                 destFileName.write(data, 0, count);
-                System.out.printf("Save: %s \n",count);
             }
             destFileName.flush();
             dataPhoto.setPathPhoto(nameSaveFile.toString());
