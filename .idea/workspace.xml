@@ -8,19 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a9e16cd-80c7-41eb-b4e2-c4f72ac34875" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/service/ValuesPhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/service/ValuesPhotoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/dao/DataPhotoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/dao/DataPhotoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/dao/DataPhotoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/dao/DataPhotoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoBalans/service/ValuesPhotoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoBalans/service/ValuesPhotoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/DataPhotoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/DataPhotoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/DataPhotoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/dao/DataPhotoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/ValuesPhotoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-app1/WEB-INF/classes/photoBalans/service/ValuesPhotoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,16 +116,17 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\photoBalans\src\main\webapp\WEB-INF\views\autorization" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="photoBalans.Config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java\photoBalans\src\main\webapp\resources\js" />
       <recent name="D:\java\photoBalans\src\main\webapp\resources\css" />
       <recent name="D:\java\photoBalans\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="photoBalans.Config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\photoBalans" />
+      <recent name="D:\java\photoBalans\src\main\webapp\WEB-INF\views\autorization" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -370,7 +359,7 @@
       <workItem from="1657403721050" duration="1457000" />
       <workItem from="1657439646618" duration="17456000" />
       <workItem from="1657470852466" duration="6921000" />
-      <workItem from="1657603350923" duration="3530000" />
+      <workItem from="1657603350923" duration="7361000" />
     </task>
     <servers />
   </component>
