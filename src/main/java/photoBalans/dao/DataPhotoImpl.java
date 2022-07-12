@@ -5,13 +5,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import photoBalans.models.DataPhoto;
 import photoBalans.service.BeeService;
 
-import javax.xml.crypto.Data;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Repository
 public class DataPhotoImpl implements DataPhotoDao {
@@ -91,9 +88,27 @@ public class DataPhotoImpl implements DataPhotoDao {
 
     @Override
     public void save(DataPhoto dataPhoto) {
-//        getSession().beginTransaction();
         getSession().save(dataPhoto);
-//        getSession().getTransaction().commit();
     }
 
+    @Override
+    public DataPhoto read(Long id) {
+        DataPhoto dataPhoto = (DataPhoto) getSession().createQuery("from DataPhoto where id = :id")
+                .setParameter("id", id).getSingleResult();
+        return dataPhoto;
+    }
+
+    @Override
+    public void update(DataPhoto dataPhoto) {
+        getSession().beginTransaction();
+        getSession().update(dataPhoto);
+        getSession().getTransaction().commit();
+    }
+
+    @Override
+    public void delete(DataPhoto dataPhoto) {
+        getSession().beginTransaction();
+        getSession().delete(dataPhoto);
+        getSession().getTransaction().commit();
+    }
 }

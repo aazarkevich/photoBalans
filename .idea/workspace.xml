@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5a9e16cd-80c7-41eb-b4e2-c4f72ac34875" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/BeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/BeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/ValuesPhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/controllers/ValuesPhotoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/dao/DataPhotoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/dao/DataPhotoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/dao/DataPhotoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/dao/DataPhotoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoBalans/service/ValuesPhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoBalans/service/ValuesPhotoService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +109,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MercuryWebApp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -303,12 +302,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.UItest.savePhoto" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.58" />
-      <item itemvalue="TestNG.UItest.autorizationTest (1)" />
-      <item itemvalue="TestNG.UItest.savePhoto (1)" />
       <item itemvalue="JUnit.ServiceTest.test" />
       <item itemvalue="JUnit.ServiceTest" />
+      <item itemvalue="TestNG.UItest.savePhoto" />
+      <item itemvalue="TestNG.UItest.autorizationTest (1)" />
+      <item itemvalue="TestNG.UItest.savePhoto (1)" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.58" />
     </list>
     <recent_temporary>
       <list>
@@ -360,7 +359,8 @@
       <workItem from="1657092755035" duration="63413000" />
       <workItem from="1657403721050" duration="1457000" />
       <workItem from="1657439646618" duration="17456000" />
-      <workItem from="1657470852466" duration="5393000" />
+      <workItem from="1657470852466" duration="6921000" />
+      <workItem from="1657603350923" duration="1386000" />
     </task>
     <servers />
   </component>

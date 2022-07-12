@@ -65,16 +65,12 @@ public class ValuesPhotoService {
         SmbFileInputStream smbFileInputStream;
         byte[] buffer = null;
         try {
-            System.out.println(pathUpload + "/" + nameFile);
             SmbFile smbFile = new SmbFile(pathUpload + "/" + nameFile);
             smbFileInputStream = new SmbFileInputStream(smbFile);
             buffer = new byte[(int) smbFile.length()];
             int bytesRead = 0;
             do {
                 bytesRead = smbFileInputStream.read(buffer, 0 ,buffer.length);
-                // here you have "bytesRead" in buffer array
-                System.out.println(bytesRead);
-                System.out.println("SMB file read:" + smbFileInputStream.available());
             }
             while (bytesRead != -1);
         } catch (UnknownHostException ex) {

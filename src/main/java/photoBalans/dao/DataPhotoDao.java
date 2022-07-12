@@ -13,4 +13,7 @@ public interface DataPhotoDao {
     List<DataPhoto> findNameDevice(String nameDevice);
     List<DataPhoto> findHouse(String house);
     void save(DataPhoto dataPhoto);
+    DataPhoto read(Long id);
+    void update(DataPhoto dataPhoto);
+    void delete(DataPhoto dataPhoto);
 }
